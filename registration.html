@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registration.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <div class="container">
+
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <button class="Visit">Visit Homepage</button>
+    </nav>
+        <div class="card">
+            <a class="Registration">Registration</a>
+            <p class="details"> Please fill your details to login your account.</p>
+            <div class="inputBox">
+                <input type="text" required="required">
+                <span class="user">Full Name</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" required="required">
+                <span class="user">Mobile Number</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" required="required">
+                <span class="user">Email</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" required="required">
+                <span class="user">Password</span>
+            </div>
+            <div class="inputBox"> 
+                <input type="password" required="required">
+                <span>Confirm Password</span>
+            </div>
+
+            <button class="enter">Register</button> 
+        </div>
+ 
+        </div>
+        <p class="already-account">Already have an account? <a href="login.html">Log in</a>.</p>
+      </div>
+      <div class="popup-overlay" id="popup">
+        <div class="popup-content">
+            <h2>Terms and Conditions</h2>
+            <p class="conditions">1. By creating an account, you agree to abide by the following terms and conditions.<br><br>
+                2. You are solely responsible for maintaining the confidentiality of your account and password.<br><br>
+                3. You must provide accurate and up-to-date information during the registration process.<br><br>
+                4. You agree not to share your account credentials with anyone else or allow anyone else to access your account.<br><br>
+                5. You are responsible for all activities that occur under your account.<br><br>
+                6. You must not use the account for any illegal or unauthorized purposes.<br><br>
+                7. We reserve the right to suspend or terminate your account if we suspect any unauthorized or suspicious activity.<br><br>
+                8. You agree not to misuse or interfere with the website's functionality or security features.<br><br>
+                9. We reserve the right to modify, suspend, or terminate your account at any time without prior notice.<br><br></p>
+               
+            <button class="accept" onclick="closePopup()">
+                <span class="btn-text-one">Accept</span>
+                <span class="btn-text-two">Great!</span></button>
+        </div>
+    </div>
+
+    <script>
+        // Function to close the pop-up box
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+        // Show the pop-up box on page load
+        window.addEventListener('load', function() {
+            document.getElementById('popup').style.display = 'block';
+        });
+    </script>
+      
+</body>
+</html>
+
